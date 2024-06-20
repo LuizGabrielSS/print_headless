@@ -1,5 +1,6 @@
 from src.print import CreatePrint
 from src.getting_html import GetHTML
+from src.send_email import SendEmail
 
 def Init(url_site):
 
@@ -7,6 +8,8 @@ def Init(url_site):
 
     CreatePrint(html)
 
-    pass
+    SendEmail("Teste - Docker with Selenium","teste@gmail.com","Teste de envio de email")
 
 Init("https://www.google.com/")
+
+

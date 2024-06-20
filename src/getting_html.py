@@ -17,4 +17,7 @@ def GetHTML(url):
 
     driver.quit()
 
+    # with open('teste.html', 'w') as test:
+    #     test.write(html)
+
     return html
